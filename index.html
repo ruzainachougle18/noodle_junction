@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Noodle Junction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        
+        .navbar-nav .nav-link:hover {
+            color: #D6A52A;
+        }
+
+        .form-control:focus {
+            border-color: #D6A52A;
+            box-shadow: 0 0 5px #D6A52A;
+        }
+
+        #carouselExampleIndicators {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 540px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background: rgba(16, 24, 32, 0.65);
+            width: 90%;
+            left: 5%;
+            padding: 15px;
+            bottom: 30px;
+            border-radius: 6px;
+
+        }
+
+        .carousel-caption h3 {
+            color: #F1EBDD;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .carousel-indicators li {
+            background-color: #B7D957;
+            height: 5px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            #carouselExampleIndicators {
+                width: 95%;
+            }
+
+            .carousel-inner img {
+                height: 300px;
+            }
+
+            .carousel-caption h3 {
+                font-size: 20px;
+            }
+        }
+
+        .announcement-bar {
+            text-align: center;
+            padding: 12px;
+            color: #173B3A;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .announcement-bar span {
+            color: #B7D957;
+            padding: 0 10px;
+        }
+
+        #zoom:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        #link:hover {
+            font-size: 25px;
+            color: #D6A52A !important;
+
+        }
+
+        .btn:hover {
+            color: #B7D957 !important;
+        }
+
+        .submit-btn:hover {
+            color: white !important;
+        }
+    </style>
+
+</head>
+
+
+
+<body style="background-color: #F4F7EF;">
+
+    <!-- logo -->
+
+    <header style="background-color: #F4F7EF;">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+                    <img src="/assest/img/logo-main.png" class="img-fluid mx-auto" height="70" width="170">
+                </div>
+
+                <div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+                    <form class="form-inline" style="margin-top: 65px; margin-left: 60px;">
+                        <div class="input-group">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search....">
+                            <button class="btn submit-btn" type="submit"
+                                style="background-color: #D6A52A; border: 2px solid #D6A52A; color:white; border-radius: 4px; font-weight: bold;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="announcement-bar"
+    style="background-color: #F4F7EF;">
+        &#10022; FRESHLY MADE. FULL OF FLAVOUR. &#10022; </div>
+
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top"
+    style="background: linear-gradient(115deg, #0D0F11 0%, #292D31 12%, #555B60 18%, #171A1D 24%, #3B4045 42%, #090B0D 55%, #4B5055 70%, #1B1E21 82%, #0A0C0E 100%);">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active" style="border-bottom: 3px solid #D6A52A; font-size: 17px;"><a
+                            class="nav-link" href="index.html" style="width: 110px; text-align: center;">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html"
+                            style="width: 160px; text-align: center;">OUR MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"
+                            style="width: 160px; text-align: center;">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="special.html"
+                            style="width: 130px; text-align: center;">SPECIALS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"
+                            style="width: 110px; text-align: center;">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"
+                            style="width: 110px; text-align: center;">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assest/img/noodle6.png" class="d-block w-100" alt="img1">
+
+                    <div class="carousel-caption">
+                        <h3>Experience the Taste of Asia</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/assest/img/noodle9.jpg" class="d-block w-100" alt="img2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assest/img/noodle7.png" class="d-block w-100" alt="img3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="container mt-5 mb-5">
+
+        <div class="row">
+
+            <!-- <div class="col-12 text-center">
+            
+            <h1> - ABOUT NOODLE JUNCTION - </h1>
+            <p style="font-size: 18px; color: #173B3A;">
+                Bringing the Flavours of Asia to Your Bowl.
+            </p>
+        </div> -->
+
+            <div class="col-12 text-center mb-4">
+
+                <p class="mb-2" style="color: #173B3A; font-size: 14px; font-weight: bold; letter-spacing: 4px;">
+                    &#10022; GET TO KNOW US &#10022;
+                </p>
+
+                <h1 style="font-size: 36px; font-weight: bold; letter-spacing: 2px; color: #D6A52A;">
+                    ABOUT NOODLE JUNCTION</span>
+                </h1>
+
+                <p class="mt-2" style="font-size: 18px; color: #555; font-family: Georgia; font-style: italic;">
+                    Bringing the Flavours of Asia to Your Bowl.
+                </p>
+
+            </div>
+
+            <div class="col-12">
+                <p style="font-size: 18px; line-height: 30px; text-align: justify; color: #29343A;">
+                    Welcome to <b style="color: #173B3A;">Noodle Junction</b>, where every bowl brings together
+                    the rich flavours of Asia. We are passionate about serving
+                    delicious noodles made with fresh ingredients, vibrant
+                    vegetables, flavourful sauces and carefully selected spices.
+
+                    <br><br>
+
+                    From classic favourites to exciting Asian-inspired creations,
+                    our menu is all about bringing you comforting food with
+                    unforgettable taste. Every dish is freshly prepared with
+                    attention to flavour and quality. Our menu is designed for
+                    food lovers who enjoy variety and love trying something different.
+                    Every visit is an opportunity to discover a new favourite,
+                    enjoy familiar comfort food or experience a combination
+                    of flavours you may never have tried before. We continuously
+                    strive to make every bowl satisfying, flavourful and
+                    worth coming back for.
+
+                    <br><br>
+
+                    At Noodle Junction, we believe great food brings people
+                    together. Whether you're enjoying a quick meal with friends
+                    or sharing a delicious bowl with family, we're here to make
+                    every visit special. Customer satisfaction is at the heart of
+                    everything we do. From the quality of our food to the experience
+                    we offer, we believe that every detail matters. We want every guest
+                    to feel welcomed, every meal to be enjoyable and every visit to leave
+                    behind a reason to return.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5 mb-5">
+        <br>
+        <hr><br>
+
+
+        <div class="row">
+
+            <div class="col-12 text-center mb-4">
+                <h2 style="font-size: 32px; font-weight: bold; color: #B7D957">
+                    OUR CUSTOMER FAVOURITES
+                </h2>
+
+                <p style="font-size: 18px; color: #173B3A; font-style: italic;">
+                    Explore our delicious selection of Asian-inspired favourites.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="Menu.html" style="text-decoration: none; ">
+                    <img id="zoom" src="/assest/img/noodle1.jpg" class="img-thumbnail img-fluid mx-auto d-block"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <h4 id="link" style="text-align: center; color:  #173B3A;">Classic Noodles</h4>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="Menu.html" style="text-decoration: none;">
+                    <img id="zoom" src="/assest/img/spicy-bowl.jpg" class="img-thumbnail img-fluid mx-auto d-block"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <h4 id="link" style="text-align: center; color:  #173B3A;">Spicy Noodle Bowls</h4>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="Menu.html" style="text-decoration: none;">
+                    <img id="zoom" src="/assest/img/noodle7.png" class="img-thumbnail img-fluid mx-auto d-block"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <h4 id="link" style="text-align: center; color:  #173B3A;">Asian Special Noodles</h4>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="Menu.html" style="text-decoration: none;">
+                    <img id="zoom" src="/assest/img/veggie-delight.jpg" class="img-thumbnail img-fluid mx-auto d-block"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <h4 id="link" style="text-align: center; color:  #173B3A;">Veggie Delight</h4>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="Menu.html" style="text-decoration: none;">
+                    <img id="zoom" src="/assest/img/signature-bowl.jpg" class="img-thumbnail img-fluid mx-auto d-block"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <h4 id="link" style="text-align: center; color:  #173B3A;">Signature Bowls</h4>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <a href="Menu.html" style="text-decoration: none;">
+                    <img id="zoom" src="/assest/img/chef-special.jpg" class="img-thumbnail img-fluid mx-auto d-block"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <h4 id="link" style="text-align: center; color:  #173B3A;">Chef's Specials</h4>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr> <br>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+
+                <h3 style="color: #101820; font-weight: bold; letter-spacing: 2px;">
+                    GOOD FOOD, MADE TO BE ENJOYED.
+                </h3>
+
+                <p style="color: #555; font-size: 17px;">
+                    Discover our menu and find your next favourite bowl.
+                </p>
+
+                <a href="#" class="btn" style="background-color: #173B3A; color: white; padding: 10px 30px;">
+                    EXPLORE OUR MENU
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #101820; color: #F1EBDD; padding: 45px 0 15px;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <h4 style="color: #B7D957; font-weight: bold; letter-spacing: 2px;">
+                        NOODLE JUNCTION
+                    </h4>
+
+                    <p style="color: #ccc; line-height: 28px;">
+                        Bringing the flavours of Asia to your bowl.
+                        Explore delicious noodle dishes and enjoy
+                        a taste worth coming back for.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #B7D957; margin-bottom: 20px;">
+                        QUICK LINKS
+                    </h5>
+
+                    <p><a href="index.html" style="color: #F1EBDD;">Home</a></p>
+                    <p><a href="menu.html" style="color: #F1EBDD;">Our Menu</a></p>
+                    <p><a href="about.html" style="color: #F1EBDD;">About Us</a></p>
+                    <p><a href="contact.html" style="color: #F1EBDD;">Contact Us</a></p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #B7D957; margin-bottom: 20px;">
+                        GET IN TOUCH
+                    </h5>
+
+                    <p style="color: #ccc;">Visit us and enjoy your favourite bowl.</p>
+                    <p style="color: #ccc;">Email: &nbsp;noodlejunction2026@gmail.com</p>
+                    <p style="color: #ccc;">Phone: &nbsp; 9876543210</p>
+                </div>
+
+            </div>
+
+            <hr style="background-color: #555;">
+
+            <div class="text-center">
+                <p style="color: #aaa; font-size: 14px; margin-bottom: 0;">
+                    &copy; 2026 Noodle Junction. All Rights Reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

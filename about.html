@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Noodle Junction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .navbar-nav .nav-link:hover {
+            color: #D6A52A;
+        }
+
+        .form-control:focus {
+            border-color: #D6A52A;
+            box-shadow: 0 0 5px #D6A52A;
+        }
+
+        .announcement-bar {
+            text-align: center;
+            padding: 12px;
+            color: #173B3A;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .announcement-bar span {
+            color: #B7D957;
+            padding: 0 10px;
+        }
+
+
+        #link:hover {
+            font-size: 25px;
+            color: #D6A52A !important;
+        }
+
+
+        .submit-btn:hover {
+            color: white !important;
+        }
+
+        .DietPlan img,
+        .DietPlan1 img {
+            transition: all 0.5s ease;
+        }
+
+        .DietPlan img:hover,
+        .DietPlan1 img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- logo -->
+
+    <header style="background-color: #F4F7EF;">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+                    <img src="/assest/img/logo-main.png" class="img-fluid mx-auto" height="70" width="170">
+                </div>
+
+                <div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+                    <form class="form-inline" style="margin-top: 65px; margin-left: 60px;">
+                        <div class="input-group">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search....">
+                            <button class="btn submit-btn" type="submit"
+                                style="background-color: #D6A52A; border: 2px solid #D6A52A; color:white; border-radius: 4px; font-weight: bold;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="announcement-bar" style="background-color: #F4F7EF;">
+        &#10022; FRESHLY MADE. FULL OF FLAVOUR. &#10022; </div>
+
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top"
+        style="background: linear-gradient(115deg, #0D0F11 0%, #292D31 12%, #555B60 18%, #171A1D 24%, #3B4045 42%, #090B0D 55%, #4B5055 70%, #1B1E21 82%, #0A0C0E 100%);">
+        >
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="width: 110px; text-align: center;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html" style="width: 160px; text-align: center;">OUR MENU</a>
+                    </li>
+                    <li class="nav-item active" style="border-bottom: 3px solid #D6A52A; font-size: 17px;">
+                        <a class="nav-link" href="about.html" style="width: 160px; text-align: center;">ABOUT
+                            US</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="special.html"
+                            style="width: 130px; text-align: center;">SPECIALS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"
+                            style="width: 110px; text-align: center;">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"
+                            style="width: 110px; text-align: center;">CONTACT
+                            US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- about us section -->
+
+    <section style="background-color: #F4F7EF; padding: 70px 0;">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- image -->
+
+                <div class="col-12 col-md-6 mb-4">
+
+                    <img src="/assest/img/noodle1.jpg" class="img-fluid" style="width: 100%; border-radius: 8px;">
+
+                </div>
+
+                <!-- content -->
+
+                <div class="col-12 col-md-6">
+
+                    <p style="color: #77B300; font-weight: bold; letter-spacing: 3px;">
+                        &#10022; OUR STORY
+                    </p>
+
+                    <h2 style="color: #26352B; font-family: Georgia, serif; font-weight: bold;">
+                        A Passion for Flavour.<br>
+                        A Love for Every Bowl.
+                    </h2>
+
+                    <hr style="width: 70px; border: 2px solid #B7D957; margin-left: 0;">
+
+                    <p style="color: #414B40; line-height: 2; text-align: justify;">
+                        Welcome to Noodle Junction, where every bowl brings together
+                        the warmth of comfort food and the excitement of bold flavours.
+                        Inspired by the diverse culinary traditions of Asia, we are
+                        passionate about creating noodle dishes that are delicious,
+                        satisfying and full of character.
+                    </p>
+
+                    <p style="color: #414B40; line-height: 2; text-align: justify;">
+                        Our journey begins with a simple belief — good food has the
+                        power to bring people together. Whether it is a quick meal
+                        after a busy day, a lunch with friends or a relaxed dinner
+                        with family, we want every visit to feel special. From
+                        familiar favourites to exciting new combinations, our menu
+                        celebrates the wonderful variety of noodle cuisine.
+                    </p>
+
+                    <p style="color: #414B40; line-height: 2; text-align: justify;">
+                        We take inspiration from the rich flavours, textures and
+                        aromas of Asian cooking. From perfectly cooked noodles and
+                        savoury sauces to fresh vegetables, aromatic spices and
+                        delightful toppings, every element plays a part in creating
+                        a bowl that is balanced, flavourful and enjoyable.
+                    </p>
+
+                    <p style="color: #414B40; line-height: 2; text-align: justify;">
+                        At Noodle Junction, we believe that the little details make
+                        a big difference. We value quality, creativity and the joy
+                        of serving food that leaves you craving another bite.
+                        Our goal is not simply to serve a meal, but to create
+                        an experience that brings you back for more.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <section style="background-color: #26352B; padding: 60px 0;">
+
+                <div class="container">
+
+                    <div class="text-center mb-5">
+
+                        <p style="color: #D6A52A; letter-spacing: 3px; font-size: 14px;">
+                            WHY NOODLE JUNCTION?
+                        </p>
+
+                        <h2 style="color: #F1EBDD; font-size: 36px;">
+                            More Than Just Noodles
+                        </h2>
+
+                        <p style="color: #ccc; font-size: 17px;">
+                            A perfect blend of comfort, flavour and variety — made for every craving.
+                        </p>
+
+                    </div>
+
+                    <div class="row text-center">
+
+                        <div class="col-md-4 mb-4">
+
+                            <h1 style="color: #B7D957; font-size: 50px;">01</h1>
+
+                            <h4 style="color: #F1EBDD;">Bold Flavours</h4>
+
+                            <p style="color: #ccc; line-height: 1.8;">
+                                Rich sauces, aromatic spices and flavourful combinations
+                                that bring every bowl to life.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+
+                            <h1 style="color: #B7D957; font-size: 50px;">02</h1>
+
+                            <h4 style="color: #F1EBDD;">Endless Variety</h4>
+
+                            <p style="color: #ccc; line-height: 1.8;">
+                                Explore different noodles, tastes and combinations
+                                to find the bowl that you love.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+
+                            <h1 style="color: #B7D957; font-size: 50px;">03</h1>
+
+                            <h4 style="color: #F1EBDD;">Made for Cravings</h4>
+
+                            <p style="color: #ccc; line-height: 1.8;">
+                                From comforting classics to spicy favourites,
+                                there is something for every mood.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- our philosophy -->
+
+            <div class="row mt-5">
+
+                <div class="col-12 text-center">
+
+                    <p style="color: #77B300; font-weight: bold; letter-spacing: 3px;">
+                        WHAT WE BELIEVE IN
+                    </p>
+
+                    <h2 style="color: #26352B; font-family: Georgia, serif; font-weight: bold;">
+                        Our Food. Our Philosophy.
+                    </h2>
+
+                    <p style="color: #414B40; line-height: 2; max-width: 850px; margin: auto;">
+                        Every bowl is an opportunity to bring flavour, freshness
+                        and happiness to the table. We believe food should be
+                        prepared with care, enjoyed with delight and remembered
+                        long after the last bite.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- highlights -->
+
+            <div class="row mt-5 text-center">
+
+                <div class="col-12 col-md-4 mb-4">
+
+                    <h4 style="color: #26352B; font-weight: bold;">
+                        &#10022; Quality Ingredients
+                    </h4>
+
+                    <p style="color: #414B40; line-height: 1.9;">
+                        We believe that every great dish begins with quality.
+                        Fresh ingredients, carefully chosen flavours and
+                        attention to detail come together in every bowl.
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+
+                    <h4 style="color: #26352B; font-weight: bold;">
+                        &#10022; Flavours That Inspire
+                    </h4>
+
+                    <p style="color: #414B40; line-height: 1.9;">
+                        From comforting classics to spicy favourites, we bring
+                        together a variety of tastes and textures to make
+                        every meal a flavourful adventure.
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-4 mb-4">
+
+                    <h4 style="color: #26352B; font-weight: bold;">
+                        &#10022; Made to Be Shared
+                    </h4>
+
+                    <p style="color: #414B40; line-height: 1.9;">
+                        Great food is even better when shared. We create a
+                        welcoming experience where friends, families and
+                        food lovers can enjoy moments together.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- brand statement -->
+
+            <div class="text-center mt-4" style="background-color: #26352B; padding: 35px 20px; border-radius: 5px;">
+
+                <h3 style="color: #B7D957; font-family: Georgia, serif; font-weight: bold;">
+                    More Than Noodles — It's an Experience.
+                </h3>
+
+                <p style="color: #F1EBDD; margin-bottom: 0; letter-spacing: 2px;">
+                    GOOD FOOD. GREAT FLAVOURS. MOMENTS THAT MATTER.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer style="background-color: #101820; color: #F1EBDD; padding: 45px 0 15px;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <h4 style="color: #B7D957; font-weight: bold; letter-spacing: 2px;">
+                        NOODLE JUNCTION
+                    </h4>
+
+                    <p style="color: #ccc; line-height: 28px;">
+                        Bringing the flavours of Asia to your bowl.
+                        Explore delicious noodle dishes and enjoy
+                        a taste worth coming back for.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #B7D957; margin-bottom: 20px;">
+                        QUICK LINKS
+                    </h5>
+
+                    <p><a href="index.html" style="color: #F1EBDD;">Home</a></p>
+                    <p><a href="menu.html" style="color: #F1EBDD;">Our Menu</a></p>
+                    <p><a href="about.html" style="color: #F1EBDD;">About Us</a></p>
+                    <p><a href="contact.html" style="color: #F1EBDD;">Contact Us</a></p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 style="color: #B7D957; margin-bottom: 20px;">
+                        GET IN TOUCH
+                    </h5>
+
+                    <p style="color: #ccc;">Visit us and enjoy your favourite bowl.</p>
+                    <p style="color: #ccc;">Email: &nbsp;noodlejunction2026@gmail.com</p>
+                    <p style="color: #ccc;">Phone: &nbsp; 9876543210</p>
+                </div>
+
+            </div>
+
+            <hr style="background-color: #555;">
+
+            <div class="text-center">
+                <p style="color: #aaa; font-size: 14px; margin-bottom: 0;">
+                    &copy; 2026 Noodle Junction. All Rights Reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
