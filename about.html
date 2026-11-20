@@ -53,6 +53,21 @@
         .DietPlan1 img:hover {
             transform: scale(1.02);
         }
+
+        @media (min-width: 768px) {
+            .navbar-nav {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .navbar-nav .nav-item {
+                margin: 0 10px;
+            }
+
+            .navbar-nav .nav-link {
+                white-space: nowrap;
+            }
+        }
     </style>
 
 </head>
@@ -65,7 +80,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
-                    <img src="/assest/img/logo-main.png" class="img-fluid mx-auto" height="70" width="170">
+                    <img src="images/logo-main.png" class="img-fluid mx-auto" height="70" width="170">
                 </div>
 
                 <div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
@@ -87,34 +102,47 @@
 
     <!-- nav bar -->
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top"
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top"
         style="background: linear-gradient(115deg, #0D0F11 0%, #292D31 12%, #555B60 18%, #171A1D 24%, #3B4045 42%, #090B0D 55%, #4B5055 70%, #1B1E21 82%, #0A0C0E 100%);">
-        >
+
         <div class="container-fluid">
 
+            <!-- HAMBURGER BUTTON -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- NAVIGATION LINKS -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
                 <ul class="navbar-nav mx-auto">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" style="width: 110px; text-align: center;">HOME</a>
+                        <a class="nav-link" href="index.html">HOME</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html" style="width: 160px; text-align: center;">OUR MENU</a>
+                        <a class="nav-link" href="menu.html">OUR MENU</a>
                     </li>
+
                     <li class="nav-item active" style="border-bottom: 3px solid #D6A52A; font-size: 17px;">
-                        <a class="nav-link" href="about.html" style="width: 160px; text-align: center;">ABOUT
-                            US</a>
+                        <a class="nav-link" href="about.html">ABOUT US</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="special.html"
-                            style="width: 130px; text-align: center;">SPECIALS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html"
-                            style="width: 110px; text-align: center;">GALLERY</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html"
-                            style="width: 110px; text-align: center;">CONTACT
-                            US</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="special.html">SPECIALS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT US</a>
+                    </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -131,7 +159,7 @@
 
                 <div class="col-12 col-md-6 mb-4">
 
-                    <img src="/assest/img/noodle1.jpg" class="img-fluid" style="width: 100%; border-radius: 8px;">
+                    <img src="images/noodle1.jpg" class="img-fluid" style="width: 100%; border-radius: 8px;">
 
                 </div>
 
